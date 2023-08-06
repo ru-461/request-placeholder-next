@@ -1,9 +1,5 @@
-import { Spinner } from './components';
+import { Box } from '@/components';
 
 export default function Home() {
-  return (
-    <>
-      <Spinner />
-    </>
-  );
+  return <Box>Home</Box>;
 }
