@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { Photo } from '@/types';
 
 async function fetchPhotos(): Promise<Photo[]> {
@@ -18,13 +18,15 @@ export default async function Photos() {
   const photos = await fetchPhotos();
 
   return (
-    <Box>
-      <h1>Photos</h1>
-      <ul>
-        {photos.map((photo) => (
-          <li key={photo.id}>{photo.title}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Photos</Heading>
+        <ul>
+          {photos.map((photo) => (
+            <li key={photo.id}>{photo.title}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }

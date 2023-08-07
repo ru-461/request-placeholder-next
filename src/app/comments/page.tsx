@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { Comment } from '@/types';
 
 async function fetchComments(): Promise<Comment[]> {
@@ -18,13 +18,15 @@ export default async function Comments() {
   const comments = await fetchComments();
 
   return (
-    <Box>
-      <h1>Comments</h1>
-      <ul>
-        {comments.map((comment) => (
-          <li key={comment.id}>{comment.name}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Comments</Heading>
+        <ul>
+          {comments.map((comment) => (
+            <li key={comment.id}>{comment.name}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }

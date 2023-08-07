@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { Album } from '@/types';
 
 async function fetchAlbums(): Promise<Album[]> {
@@ -18,13 +18,15 @@ export default async function Albums() {
   const albums = await fetchAlbums();
 
   return (
-    <Box>
-      <h1>Albums</h1>
-      <ul>
-        {albums.map((album) => (
-          <li key={album.id}>{album.title}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Albums</Heading>
+        <ul>
+          {albums.map((album) => (
+            <li key={album.id}>{album.title}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }

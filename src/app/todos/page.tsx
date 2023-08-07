@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { Todo } from '@/types';
 
 async function fetchTodos(): Promise<Todo[]> {
@@ -18,13 +18,15 @@ export default async function Todos() {
   const todos = await fetchTodos();
 
   return (
-    <Box>
-      <h1>Todos</h1>
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Todos</Heading>
+        <ul>
+          {todos.map((todo) => (
+            <li key={todo.id}>{todo.title}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }

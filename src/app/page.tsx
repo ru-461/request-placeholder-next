@@ -1,5 +1,11 @@
-import { Box } from '@/components';
+import { Box, Flex } from '@/components';
 
 export default function Home() {
-  return <Box>Hello {`{JSON}`} Placeholder.</Box>;
+  return (
+    <Box>
+      <Flex justify="center" align="center" height="100vh">
+        Hello {`{JSON}`} Placeholder.
+      </Flex>
+    </Box>
+  );
 }

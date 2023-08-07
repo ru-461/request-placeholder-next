@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { User } from '@/types';
 
 async function fetchUsers(): Promise<User[]> {
@@ -18,13 +18,15 @@ export default async function Users() {
   const users = await fetchUsers();
 
   return (
-    <Box>
-      <h1>Users</h1>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>{user.name}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Users</Heading>
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }

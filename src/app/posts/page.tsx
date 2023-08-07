@@ -1,4 +1,4 @@
-import { Box } from '@/components';
+import { Box, Heading, Stack } from '@/components';
 import { Post } from '@/types';
 
 async function fetchPosts(): Promise<Post[]> {
@@ -18,13 +18,15 @@ export default async function Posts() {
   const posts = await fetchPosts();
 
   return (
-    <Box>
-      <h1>Posts</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>{post.id}</li>
-        ))}
-      </ul>
+    <Box justifyContent="center" display="flex">
+      <Stack>
+        <Heading mb="2">Posts</Heading>
+        <ul>
+          {posts.map((post) => (
+            <li key={post.id}>{post.id}</li>
+          ))}
+        </ul>
+      </Stack>
     </Box>
   );
 }
