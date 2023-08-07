@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Box, Text } from '.';
+import { HStack, Text } from '.';
 
 export default function Header() {
   return (
-    <Box p="3" display="flex" fontSize="lg">
+    <HStack spacing="2">
       <Text px="1">
         <Link href="/posts">Posts</Link>
       </Text>
@@ -22,6 +22,6 @@ export default function Header() {
       <Text px="1">
         <Link href="/users">Users</Link>
       </Text>
-    </Box>
+    </HStack>
   );
 }
