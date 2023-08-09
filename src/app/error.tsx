@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { Box, Button, Heading } from '@/components';
+import { Box, Button, Heading, Text, VStack } from '@/components';
 
 export default function Error({
   error,
@@ -16,8 +16,10 @@ export default function Error({
 
   return (
     <Box alignItems="center" display="flex" h="100vh" justifyContent="center">
-      <Heading>Error.</Heading>
-      <Button onClick={() => reset()}>Try again</Button>
+      <VStack spacing="4">
+        <Heading fontSize="6xl">Error</Heading>
+        <Button onClick={() => reset()}>Retry</Button>
+      </VStack>
     </Box>
   );
 }
