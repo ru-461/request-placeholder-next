@@ -1,5 +1,6 @@
 import { Post } from '@/types';
-import { Card } from '.';
+import { Card, LinkOverlay } from '.';
+import Link from 'next/link';
 
 export default function PostCard({ post }: { post: Post }) {
   return (
@@ -10,7 +11,9 @@ export default function PostCard({ post }: { post: Post }) {
       p="2"
       rounded="lg"
     >
-      {post.title}
+      <LinkOverlay as={Link} href={`/posts/${post.id}`}>
+        {post.title}
+      </LinkOverlay>
     </Card>
   );
 }

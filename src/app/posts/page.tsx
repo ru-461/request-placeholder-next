@@ -23,7 +23,7 @@ export default async function Posts() {
       <Stack>
         <Heading mb="2">Posts</Heading>
         <Divider />
-        <SimpleGrid columns={[2, null, 3]} spacing="6">
+        <SimpleGrid columns={[1, 2, 3]} spacing="6">
           {posts.map((post) => (
             <PostCard key={post.id} post={post} />
           ))}
