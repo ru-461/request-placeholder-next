@@ -18,7 +18,7 @@ export default async function Albums() {
   const albums = await fetchAlbums();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Albums</Heading>
         <ul>

@@ -1,27 +1,73 @@
-import Link from 'next/link';
-import { HStack, Text } from '.';
+import NextLink from 'next/link';
+import { Box, HStack, Link } from '.';
 
 export default function Header() {
   return (
-    <HStack spacing="2">
-      <Text px="1">
-        <Link href="/posts">Posts</Link>
-      </Text>
-      <Text px="1">
-        <Link href="/comments">Comments</Link>
-      </Text>
-      <Text px="1">
-        <Link href="/albums">Albums</Link>
-      </Text>
-      <Text px="1">
-        <Link href="/photos">Photos</Link>
-      </Text>
-      <Text px="1">
-        <Link href="/todos">Todos</Link>
-      </Text>
-      <Text px="1">
-        <Link href="/users">Users</Link>
-      </Text>
-    </HStack>
+    <Box as="header">
+      <HStack
+        bg="white"
+        color="gray.600"
+        h="50"
+        justify="center"
+        minH="50px"
+        spacing="6"
+        w="full"
+      >
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/posts"
+        >
+          Posts
+        </Link>
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/comments"
+        >
+          Comments
+        </Link>
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/albums"
+        >
+          Albums
+        </Link>
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/photos"
+        >
+          Photos
+        </Link>
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/todos"
+        >
+          Todos
+        </Link>
+        <Link
+          _hover={{ color: 'black' }}
+          as={NextLink}
+          fontSize="lg"
+          fontWeight="500"
+          href="/users"
+        >
+          Users
+        </Link>
+      </HStack>
+    </Box>
   );
 }

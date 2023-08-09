@@ -1,11 +1,9 @@
-import { Box, Flex, Spinner } from '@/components';
+import { Box, Spinner } from '@/components';
 
 export default function Loading() {
   return (
-    <Box>
-      <Flex justify="center" align="center" height="100vh">
-        <Spinner size="xl" />
-      </Flex>
+    <Box alignItems="center" display="flex" h="100vh" justifyContent="center">
+      <Spinner size="xl" />
     </Box>
   );
 }

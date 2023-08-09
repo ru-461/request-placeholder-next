@@ -18,7 +18,7 @@ export default async function Comments() {
   const comments = await fetchComments();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Comments</Heading>
         <ul>

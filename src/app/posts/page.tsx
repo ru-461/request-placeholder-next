@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components';
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components';
+import PostCard from '@/components/PostCard';
 import { Post } from '@/types';
 
 async function fetchPosts(): Promise<Post[]> {
@@ -18,14 +19,15 @@ export default async function Posts() {
   const posts = await fetchPosts();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Posts</Heading>
-        <ul>
+        <Divider />
+        <SimpleGrid columns={[2, null, 3]} spacing="6">
           {posts.map((post) => (
-            <li key={post.id}>{post.id}</li>
+            <PostCard key={post.id} post={post} />
           ))}
-        </ul>
+        </SimpleGrid>
       </Stack>
     </Box>
   );

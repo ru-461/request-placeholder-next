@@ -18,7 +18,7 @@ export default async function Users() {
   const users = await fetchUsers();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Users</Heading>
         <ul>

@@ -18,7 +18,7 @@ export default async function Photos() {
   const photos = await fetchPhotos();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Photos</Heading>
         <ul>

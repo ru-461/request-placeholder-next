@@ -15,7 +15,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <Box>
+    <Box alignItems="center" display="flex" h="100vh" justifyContent="center">
       <Heading>Error.</Heading>
       <Button onClick={() => reset()}>Try again</Button>
     </Box>

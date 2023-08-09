@@ -18,7 +18,7 @@ export default async function Todos() {
   const todos = await fetchTodos();
 
   return (
-    <Box justifyContent="center" display="flex">
+    <Box>
       <Stack>
         <Heading mb="2">Todos</Heading>
         <ul>

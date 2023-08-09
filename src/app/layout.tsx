@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
 import Header from '@/components/Header';
+import Main from './Main';
 
 export const metadata: Metadata = {
   title: 'RequestPlaceholderNext',
@@ -17,7 +18,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Header />
-          {children}
+          <Main>{children}</Main>
         </Providers>
       </body>
     </html>
