@@ -3,7 +3,7 @@ import { Box, HStack, Link } from '.';
 
 export default function Header() {
   return (
-    <Box as="header">
+    <Box as="header" mb="10" mt="5">
       <HStack
         bg="white"
         color="gray.600"
