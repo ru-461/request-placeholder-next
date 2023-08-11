@@ -7,10 +7,9 @@ import {
   Stack,
   Text,
   VStack,
-} from '@/components';
+} from '@/components/common';
 
 async function fetchPost(id: number) {
-  // Fetch
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
 
   if (!res.ok) {
@@ -27,7 +26,7 @@ export default async function PostDetail({
 }: {
   params: { id: number };
 }) {
-  // Fetch
+  // Fetch from API.
   const post = await fetchPost(params.id);
 
   return (

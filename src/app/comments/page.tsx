@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from '@/components';
+import { Box, Heading, Stack } from '@/components/common';
 import { Comment } from '@/types';
 
 async function fetchComments(): Promise<Comment[]> {

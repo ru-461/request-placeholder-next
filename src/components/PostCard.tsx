@@ -1,5 +1,5 @@
 import { Post } from '@/types';
-import { Card, LinkOverlay } from '.';
+import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
 
 export default function PostCard({ post }: { post: Post }) {

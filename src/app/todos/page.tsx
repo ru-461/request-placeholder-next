@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from '@/components';
+import { Box, Heading, Stack } from '@/components/common';
 import { Todo } from '@/types';
 
 async function fetchTodos(): Promise<Todo[]> {

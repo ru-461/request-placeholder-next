@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from '@/components';
+import { Box, Heading, Stack } from '@/components/common';
 import { Album } from '@/types';
 
 async function fetchAlbums() {

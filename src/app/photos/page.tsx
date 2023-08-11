@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from '@/components';
+import { Box, Heading, Stack } from '@/components/common';
 import { Photo } from '@/types';
 
 async function fetchPhotos(): Promise<Photo[]> {

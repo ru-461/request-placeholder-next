@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { Box, HStack, Link } from '.';
+import { Box, HStack, Link } from '@/components/common';
 
 export default function Header() {
   return (
