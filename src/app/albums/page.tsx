@@ -1,7 +1,7 @@
 import { Box, Heading, Stack } from '@/components';
 import { Album } from '@/types';
 
-async function fetchAlbums(): Promise<Album[]> {
+async function fetchAlbums() {
   const res = await fetch('https://jsonplaceholder.typicode.com/albums');
 
   if (!res.ok) {

@@ -1,4 +1,13 @@
 import { Post } from '@/types';
+import {
+  Box,
+  Center,
+  Divider,
+  Heading,
+  Stack,
+  Text,
+  VStack,
+} from '@/components';
 
 async function fetchPost(id: number) {
   // Fetch
@@ -21,5 +30,13 @@ export default async function PostDetail({
   // Fetch
   const post = await fetchPost(params.id);
 
-  return <>{post.title}</>;
+  return (
+    <Box>
+      <VStack>
+        <Heading>{post.title}</Heading>
+        <Divider />
+        <Text>{post.body}</Text>
+      </VStack>
+    </Box>
+  );
 }
