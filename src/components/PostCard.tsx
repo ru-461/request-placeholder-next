@@ -2,7 +2,7 @@ import { Post } from '@/types';
 import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
 
-export default function PostCard({ post }: { post: Post }) {
+export function PostCard({ post }: { post: Post }) {
   return (
     <Card
       _hover={{ boxShadow: 'lg' }}

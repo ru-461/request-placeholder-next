@@ -1,5 +1,5 @@
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
-import PostCard from '@/components/PostCard';
+import { PostCard } from '@/components/PostCard';
 import { Post } from '@/types';
 
 async function fetchPosts(): Promise<Post[]> {

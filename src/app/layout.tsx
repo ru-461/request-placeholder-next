@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Providers } from './providers';
-import Header from '@/components/Header';
-import Main from '@/components/Main';
+import { Header } from '@/components/Header';
+import { Main } from '@/components/Main';
 
 export const metadata: Metadata = {
   title: 'RequestPlaceholderNext',

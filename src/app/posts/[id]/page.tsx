@@ -1,13 +1,5 @@
 import { Post } from '@/types';
-import {
-  Box,
-  Center,
-  Divider,
-  Heading,
-  Stack,
-  Text,
-  VStack,
-} from '@/components/common';
+import { Box, Divider, Heading, Text, VStack } from '@/components/common';
 
 async function fetchPost(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);

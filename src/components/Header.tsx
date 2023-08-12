@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 import { Box, HStack, Link } from '@/components/common';
 
-export default function Header() {
+export function Header() {
   return (
     <Box as="header" mb="10" mt="5">
       <HStack
