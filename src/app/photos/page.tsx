@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components/common';
+import { PhotoCard } from '@/components/PhotoCard';
+import { Box, Divider, Heading, Stack } from '@/components/common';
 import { Photo } from '@/types';
 
 async function fetchPhotos(): Promise<Photo[]> {
@@ -21,11 +22,10 @@ export default async function Photos() {
     <Box>
       <Stack>
         <Heading mb="2">Photos</Heading>
-        <ul>
-          {photos.map((photo) => (
-            <li key={photo.id}>{photo.title}</li>
-          ))}
-        </ul>
+        <Divider />
+        {photos.map((photo) => (
+          <PhotoCard key={photo.id} photo={photo} />
+        ))}
       </Stack>
     </Box>
   );

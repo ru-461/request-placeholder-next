@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components/common';
+import { UserCard } from '@/components/UserCard';
+import { Box, Divider, Heading, Stack } from '@/components/common';
 import { User } from '@/types';
 
 async function fetchUsers(): Promise<User[]> {
@@ -21,11 +22,10 @@ export default async function Users() {
     <Box>
       <Stack>
         <Heading mb="2">Users</Heading>
-        <ul>
-          {users.map((user) => (
-            <li key={user.id}>{user.name}</li>
-          ))}
-        </ul>
+        <Divider />
+        {users.map((user) => (
+          <UserCard key={user.id} user={user} />
+        ))}
       </Stack>
     </Box>
   );

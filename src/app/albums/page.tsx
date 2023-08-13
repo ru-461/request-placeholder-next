@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components/common';
+import { AlbumCard } from '@/components/AlbumCard';
+import { Box, Divider, Heading, Stack } from '@/components/common';
 import { Album } from '@/types';
 
 async function fetchAlbums() {
@@ -21,11 +22,10 @@ export default async function Albums() {
     <Box>
       <Stack>
         <Heading mb="2">Albums</Heading>
-        <ul>
-          {albums.map((album) => (
-            <li key={album.id}>{album.title}</li>
-          ))}
-        </ul>
+        <Divider />
+        {albums.map((album) => (
+          <AlbumCard album={album} key={album.id} />
+        ))}
       </Stack>
     </Box>
   );

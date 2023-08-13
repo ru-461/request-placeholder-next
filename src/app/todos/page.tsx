@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components/common';
+import { TodoCard } from '@/components/TodoCard';
+import { Box, Divider, Heading, Stack } from '@/components/common';
 import { Todo } from '@/types';
 
 async function fetchTodos(): Promise<Todo[]> {
@@ -21,11 +22,10 @@ export default async function Todos() {
     <Box>
       <Stack>
         <Heading mb="2">Todos</Heading>
-        <ul>
-          {todos.map((todo) => (
-            <li key={todo.id}>{todo.title}</li>
-          ))}
-        </ul>
+        <Divider />
+        {todos.map((todo) => (
+          <TodoCard key={todo.id} todo={todo} />
+        ))}
       </Stack>
     </Box>
   );

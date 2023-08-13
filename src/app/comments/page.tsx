@@ -1,4 +1,5 @@
-import { Box, Heading, Stack } from '@/components/common';
+import { CommentCard } from '@/components/CommentCard';
+import { Box, Divider, Heading, Stack } from '@/components/common';
 import { Comment } from '@/types';
 
 async function fetchComments(): Promise<Comment[]> {
@@ -21,11 +22,10 @@ export default async function Comments() {
     <Box>
       <Stack>
         <Heading mb="2">Comments</Heading>
-        <ul>
-          {comments.map((comment) => (
-            <li key={comment.id}>{comment.name}</li>
-          ))}
-        </ul>
+        <Divider />
+        {comments.map((comment) => (
+          <CommentCard comment={comment} key={comment.id} />
+        ))}
       </Stack>
     </Box>
   );
