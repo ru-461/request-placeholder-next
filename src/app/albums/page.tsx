@@ -1,5 +1,5 @@
 import { AlbumCard } from '@/components/AlbumCard';
-import { Box, Divider, Heading, Stack } from '@/components/common';
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 import { Album } from '@/types';
 
 async function fetchAlbums() {
@@ -23,9 +23,11 @@ export default async function Albums() {
       <Stack>
         <Heading mb="2">Albums</Heading>
         <Divider />
-        {albums.map((album) => (
-          <AlbumCard album={album} key={album.id} />
-        ))}
+        <SimpleGrid columns={[1, 2, 3]} spacing="6">
+          {albums.map((album) => (
+            <AlbumCard album={album} key={album.id} />
+          ))}
+        </SimpleGrid>
       </Stack>
     </Box>
   );

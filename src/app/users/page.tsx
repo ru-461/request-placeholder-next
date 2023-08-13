@@ -1,5 +1,5 @@
 import { UserCard } from '@/components/UserCard';
-import { Box, Divider, Heading, Stack } from '@/components/common';
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 import { User } from '@/types';
 
 async function fetchUsers(): Promise<User[]> {
@@ -23,9 +23,11 @@ export default async function Users() {
       <Stack>
         <Heading mb="2">Users</Heading>
         <Divider />
-        {users.map((user) => (
-          <UserCard key={user.id} user={user} />
-        ))}
+        <SimpleGrid columns={[1, 2, 3]} spacing="6">
+          {users.map((user) => (
+            <UserCard key={user.id} user={user} />
+          ))}
+        </SimpleGrid>
       </Stack>
     </Box>
   );

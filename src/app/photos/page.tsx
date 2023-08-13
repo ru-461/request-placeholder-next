@@ -1,5 +1,5 @@
 import { PhotoCard } from '@/components/PhotoCard';
-import { Box, Divider, Heading, Stack } from '@/components/common';
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 import { Photo } from '@/types';
 
 async function fetchPhotos(): Promise<Photo[]> {
@@ -23,9 +23,11 @@ export default async function Photos() {
       <Stack>
         <Heading mb="2">Photos</Heading>
         <Divider />
-        {photos.map((photo) => (
-          <PhotoCard key={photo.id} photo={photo} />
-        ))}
+        <SimpleGrid columns={[1, 2, 3]} spacing="6">
+          {photos.map((photo) => (
+            <PhotoCard key={photo.id} photo={photo} />
+          ))}
+        </SimpleGrid>
       </Stack>
     </Box>
   );
