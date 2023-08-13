@@ -1,6 +1,33 @@
 import NextLink from 'next/link';
 import { Box, HStack, Link } from '@/components/common';
 
+const ITEMS = [
+  {
+    href: '/posts',
+    title: 'Posts',
+  },
+  {
+    href: '/comments',
+    title: 'Comments',
+  },
+  {
+    href: '/albums',
+    title: 'Albums',
+  },
+  {
+    href: '/photos',
+    title: 'Photos',
+  },
+  {
+    href: '/todos',
+    title: 'Todos',
+  },
+  {
+    href: '/users',
+    title: 'Users',
+  },
+];
+
 export function Header() {
   return (
     <Box as="header" mb="10" mt="5">
@@ -13,60 +40,18 @@ export function Header() {
         spacing="6"
         w="full"
       >
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/posts"
-        >
-          Posts
-        </Link>
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/comments"
-        >
-          Comments
-        </Link>
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/albums"
-        >
-          Albums
-        </Link>
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/photos"
-        >
-          Photos
-        </Link>
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/todos"
-        >
-          Todos
-        </Link>
-        <Link
-          _hover={{ color: 'black' }}
-          as={NextLink}
-          fontSize="lg"
-          fontWeight="500"
-          href="/users"
-        >
-          Users
-        </Link>
+        {ITEMS.map((item) => (
+          <Link
+            _hover={{ color: 'black' }}
+            as={NextLink}
+            fontSize="lg"
+            fontWeight="500"
+            href={item.href}
+            key={item.href}
+          >
+            {item.title}
+          </Link>
+        ))}
       </HStack>
     </Box>
   );
