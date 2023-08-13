@@ -11,7 +11,7 @@ export function PhotoCard({ photo }: { photo: Photo }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/photos/${photo.id}}`}>
+      <LinkOverlay as={Link} href={`/photos/${photo.id}`}>
         {photo.title}
       </LinkOverlay>
     </Card>

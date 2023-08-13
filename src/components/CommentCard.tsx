@@ -11,7 +11,7 @@ export function CommentCard({ comment }: { comment: Comment }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/comment/${comment.id}}`}>
+      <LinkOverlay as={Link} href={`/comment/${comment.id}`}>
         {comment.name}
       </LinkOverlay>
     </Card>

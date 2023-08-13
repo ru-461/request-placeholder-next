@@ -11,7 +11,7 @@ export function TodoCard({ todo }: { todo: Todo }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/todos/${todo.id}}`}>
+      <LinkOverlay as={Link} href={`/todos/${todo.id}`}>
         {todo.title}
       </LinkOverlay>
     </Card>

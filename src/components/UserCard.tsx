@@ -11,7 +11,7 @@ export function UserCard({ user }: { user: User }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/users/${user.id}}`}>
+      <LinkOverlay as={Link} href={`/users/${user.id}`}>
         {user.name}
       </LinkOverlay>
     </Card>

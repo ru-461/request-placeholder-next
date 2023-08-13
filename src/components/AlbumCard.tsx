@@ -11,7 +11,7 @@ export function AlbumCard({ album }: { album: Album }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/albums/${album.id}}`}>
+      <LinkOverlay as={Link} href={`/albums/${album.id}`}>
         {album.title}
       </LinkOverlay>
     </Card>
