@@ -24,7 +24,7 @@ export default async function PostDetail({
   return (
     <Box>
       <VStack>
-        <Heading>{post.title}</Heading>
+        <Heading mb="2">{post.title}</Heading>
         <Divider />
         <Text>{post.body}</Text>
       </VStack>
