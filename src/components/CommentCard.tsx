@@ -1,6 +1,14 @@
 import { Comment } from '@/types';
-import { Card, LinkOverlay } from '@/components/common';
-import Link from 'next/link';
+import {
+  Card,
+  Flex,
+  HStack,
+  Link,
+  LinkOverlay,
+  Spacer,
+  Text,
+} from '@/components/common';
+import NextLink from 'next/link';
 
 export function CommentCard({ comment }: { comment: Comment }) {
   return (
@@ -8,12 +16,20 @@ export function CommentCard({ comment }: { comment: Comment }) {
       _hover={{ boxShadow: 'lg' }}
       as="article"
       boxShadow="md"
-      p="2"
+      p="5"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/comment/${comment.id}`}>
-        {comment.name}
-      </LinkOverlay>
+      <HStack>
+        <Text>{comment.name}</Text>
+        <Spacer />
+        <Link
+          _hover={{ color: '#10B981' }}
+          as={NextLink}
+          href={`/posts/${comment.postId}`}
+        >
+          Show post
+        </Link>
+      </HStack>
     </Card>
   );
 }
