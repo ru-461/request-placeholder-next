@@ -8,7 +8,7 @@ export function UserCard({ user }: { user: User }) {
       _hover={{ boxShadow: 'lg' }}
       as="article"
       boxShadow="md"
-      p="2"
+      p="4"
       rounded="lg"
     >
       <LinkOverlay as={Link} href={`/users/${user.id}`}>
