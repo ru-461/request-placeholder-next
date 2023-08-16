@@ -1,13 +1,5 @@
 import { Comment } from '@/types';
-import {
-  Card,
-  Flex,
-  HStack,
-  Link,
-  LinkOverlay,
-  Spacer,
-  Text,
-} from '@/components/common';
+import { Card, HStack, Link, Spacer, Text } from '@/components/common';
 import NextLink from 'next/link';
 
 export function CommentCard({ comment }: { comment: Comment }) {
@@ -16,6 +8,7 @@ export function CommentCard({ comment }: { comment: Comment }) {
       _hover={{ boxShadow: 'lg' }}
       as="article"
       boxShadow="md"
+      mb="2"
       p="5"
       rounded="lg"
     >
