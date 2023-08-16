@@ -1,5 +1,5 @@
-import { Post, User } from '@/types';
-import { Box, Divider, Heading, Link, Text, VStack } from '@/components/common';
+import { Comment, Post, User } from '@/types';
+import { Box, Heading, Link, Text, VStack, Stack } from '@/components/common';
 import NextLink from 'next/link';
 
 async function fetchPost(id: number) {
@@ -28,7 +28,7 @@ async function fetchUser(id: number) {
 
 async function fetchComments(id: number) {
   const res = await fetch(
-    `https://jsonplaceholder.typicode.com/comments/${id}`,
+    `https://jsonplaceholder.typicode.com/comments?postId=${id}`,
   );
 
   if (!res.ok) {
@@ -37,7 +37,7 @@ async function fetchComments(id: number) {
 
   const data = await res.json();
 
-  return data as User;
+  return data as Comment[];
 }
 
 export default async function PostDetail({
@@ -48,18 +48,31 @@ export default async function PostDetail({
   // Fetch from API.
   const post = await fetchPost(params.id);
   const user = await fetchUser(params.id);
+  const comments = await fetchComments(params.id);
 
   return (
     <Box>
-      <VStack>
-        <Link as={NextLink} href={`/users/${user.id}`}>
-          {user.name}
-        </Link>
-        <Heading mb="2">{post.title}</Heading>
-        <Divider />
-        <Text>{post.body}</Text>
-        <Divider />
-      </VStack>
+      <Stack>
+        <Box mb="10">
+          <Link as={NextLink} href={`/users/${user.id}`}>
+            {user.name}
+          </Link>
+          <Heading mb="2">{post.title}</Heading>
+          <Text>{post.body}</Text>
+        </Box>
+        <Box>
+          <Heading mb="2">Comments</Heading>
+          {comments ? (
+            comments.map((comment) => (
+              <Text key={comment.id} mb="2">
+                {comment.body}
+              </Text>
+            ))
+          ) : (
+            <Text>No comment yet.</Text>
+          )}
+        </Box>
+      </Stack>
     </Box>
   );
 }
