@@ -1,5 +1,5 @@
 import { Comment, Post, User } from '@/types';
-import { Box, Heading, Link, Text, VStack, Stack } from '@/components/common';
+import { Box, Heading, Link, Text, Stack } from '@/components/common';
 import NextLink from 'next/link';
 
 async function fetchPost(id: number) {
@@ -15,7 +15,7 @@ async function fetchPost(id: number) {
 }
 
 async function fetchUser(id: number) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+  const res = await fetch('https://jsonplaceholder.typicode.com/users/${id}');
 
   if (!res.ok) {
     throw new Error('Fetch failed.');
