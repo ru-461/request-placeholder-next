@@ -2,5 +2,10 @@ node_modules
 .next
 yarn.lock
 package-lock.json
-pnpm-lock.yaml
 public
+.editorconfig
+.gitignore
+.eslintignore
+.prettierignore
+*-lock.yaml
+*.log*
