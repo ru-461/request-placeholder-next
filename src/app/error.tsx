@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+
 import { Box, Button, Heading, VStack } from '@/components/common';
 
 export default function Error({

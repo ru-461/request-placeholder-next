@@ -1,5 +1,6 @@
-import { PhotoCard } from '@/components/PhotoCard';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
+import { PhotoCard } from '@/components/PhotoCard';
+
 import { Photo } from '@/types';
 
 async function fetchPhotos(): Promise<Photo[]> {

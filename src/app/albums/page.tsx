@@ -1,5 +1,6 @@
 import { AlbumCard } from '@/components/AlbumCard';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
+
 import { Album } from '@/types';
 
 async function fetchAlbums() {

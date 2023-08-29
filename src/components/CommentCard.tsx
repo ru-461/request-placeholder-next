@@ -1,6 +1,8 @@
-import { Comment } from '@/types';
-import { Card, HStack, Link, Spacer, Text } from '@/components/common';
 import NextLink from 'next/link';
+
+import { Card, HStack, Link, Spacer, Text } from '@/components/common';
+
+import { Comment } from '@/types';
 
 export function CommentCard({ comment }: { comment: Comment }) {
   return (

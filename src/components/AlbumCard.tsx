@@ -1,6 +1,8 @@
-import { Album } from '@/types';
-import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
+
+import { Card, LinkOverlay } from '@/components/common';
+
+import { Album } from '@/types';
 
 export function AlbumCard({ album }: { album: Album }) {
   return (

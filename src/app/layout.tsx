@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+
 import { Providers } from './providers';
+
 import { Header } from '@/components/Header';
 import { Main } from '@/components/Main';
 

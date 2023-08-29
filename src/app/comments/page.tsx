@@ -1,5 +1,6 @@
 import { CommentCard } from '@/components/CommentCard';
 import { Box, Divider, Heading, Stack } from '@/components/common';
+
 import { Comment } from '@/types';
 
 async function fetchComments(): Promise<Comment[]> {

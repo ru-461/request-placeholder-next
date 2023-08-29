@@ -1,6 +1,8 @@
-import { Photo } from '@/types';
-import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
+
+import { Card, LinkOverlay } from '@/components/common';
+
+import { Photo } from '@/types';
 
 export function PhotoCard({ photo }: { photo: Photo }) {
   return (

@@ -1,6 +1,8 @@
-import { Todo } from '@/types';
-import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
+
+import { Card, LinkOverlay } from '@/components/common';
+
+import { Todo } from '@/types';
 
 export function TodoCard({ todo }: { todo: Todo }) {
   return (

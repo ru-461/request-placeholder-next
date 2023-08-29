@@ -1,6 +1,8 @@
-import { Post } from '@/types';
-import { Card, LinkOverlay } from '@/components/common';
 import Link from 'next/link';
+
+import { Card, LinkOverlay } from '@/components/common';
+
+import { Post } from '@/types';
 
 export function PostCard({ post }: { post: Post }) {
   return (

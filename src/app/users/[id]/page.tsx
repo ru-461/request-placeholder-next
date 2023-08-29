@@ -1,4 +1,3 @@
-import { Post, User, Album, Todo } from '@/types';
 import {
   Box,
   HStack,
@@ -12,6 +11,8 @@ import { Link } from '@/components/common';
 import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/common';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@/components/common';
 import { PostCard } from '@/components/PostCard';
+
+import { Post, User, Album, Todo } from '@/types';
 
 async function fetchUser(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
