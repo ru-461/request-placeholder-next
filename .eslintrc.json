@@ -3,6 +3,9 @@
   "globals": {
     "React": true
   },
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
   "plugins": ["import", "unused-imports"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
