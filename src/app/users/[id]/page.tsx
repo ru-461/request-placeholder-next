@@ -1,3 +1,4 @@
+import { AlbumCard } from '@/components/AlbumCard';
 import {
   Box,
   HStack,
@@ -11,6 +12,7 @@ import { Link } from '@/components/common';
 import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/common';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@/components/common';
 import { PostCard } from '@/components/PostCard';
+import { TodoCard } from '@/components/TodoCard';
 
 import { Post, User, Album, Todo } from '@/types';
 
@@ -139,22 +141,22 @@ export default async function UserDetail({
             </TabPanel>
             <TabPanel>
               {albums ? (
-                <>
+                <SimpleGrid columns={[1, 2, 3]} spacing="6">
                   {albums.map((album) => (
-                    <p key={album.id}>{album.title}</p>
+                    <AlbumCard album={album} key={album.id} />
                   ))}
-                </>
+                </SimpleGrid>
               ) : (
                 <Text>No albums yet</Text>
               )}
             </TabPanel>
             <TabPanel>
               {todos ? (
-                <>
+                <Stack>
                   {todos.map((todo) => (
-                    <p key={todo.id}>{todo.title}</p>
+                    <TodoCard key={todo.id} todo={todo} />
                   ))}
-                </>
+                </Stack>
               ) : (
                 <Text>No todos yet</Text>
               )}
