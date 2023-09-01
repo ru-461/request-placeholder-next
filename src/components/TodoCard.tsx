@@ -1,10 +1,15 @@
-import Link from 'next/link';
+'use client';
 
-import { Card, LinkOverlay } from '@/components/common';
+import { useState } from 'react';
+
+import { Checkbox } from '@/components/common';
+import { Card } from '@/components/common';
 
 import { Todo } from '@/types';
 
 export function TodoCard({ todo }: { todo: Todo }) {
+  const [isChecked, setChecked] = useState(todo.completed);
+
   return (
     <Card
       _hover={{ boxShadow: 'lg' }}
@@ -13,9 +18,9 @@ export function TodoCard({ todo }: { todo: Todo }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/todos/${todo.id}`}>
+      <Checkbox isChecked={isChecked} onChange={() => setChecked(!isChecked)}>
         {todo.title}
-      </LinkOverlay>
+      </Checkbox>
     </Card>
   );
 }
