@@ -22,7 +22,7 @@ export function CommentCard({ comment }: { comment: Comment }) {
           as={NextLink}
           href={`/posts/${comment.postId}`}
         >
-          Show post
+          <Text>Show post</Text>
         </Link>
       </HStack>
     </Card>
