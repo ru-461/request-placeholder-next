@@ -49,7 +49,7 @@ export default async function PostDetail({
 }) {
   // Fetch from API.
   const post = await fetchPost(params.id);
-  const user = await fetchUser(params.id);
+  const user = await fetchUser(post.userId);
   const comments = await fetchComments(params.id);
 
   return (

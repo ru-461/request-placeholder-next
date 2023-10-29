@@ -1,6 +1,4 @@
-import Link from 'next/link';
-
-import { Card, LinkOverlay } from '@/components/common';
+import { Card } from '@/components/common';
 
 import { Album } from '@/types';
 
@@ -13,9 +11,7 @@ export function AlbumCard({ album }: { album: Album }) {
       p="2"
       rounded="lg"
     >
-      <LinkOverlay as={Link} href={`/albums/${album.id}`}>
-        {album.title}
-      </LinkOverlay>
+      {album.title}
     </Card>
   );
 }
