@@ -11,7 +11,7 @@ Install dependencies.
 pnpm install
 ```
 
-Start development server on [localhost:3000](ttp://localhost:3000).
+Start development server on [localhost:3000](http://localhost:3000).
 
 ```shell
 pnpm dev
