@@ -4,9 +4,6 @@ import { Card, HStack, Link, Spacer, Text } from '@/components/common';
 
 import { Comment } from '@/types';
 
-
-
-
 export function CommentCard({ comment }: { comment: Comment }) {
   return (
     <Card

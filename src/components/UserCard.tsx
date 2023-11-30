@@ -4,9 +4,6 @@ import { Card, LinkOverlay } from '@/components/common';
 
 import { User } from '@/types';
 
-
-
-
 export function UserCard({ user }: { user: User }) {
   return (
     <Card

@@ -1,4 +1,3 @@
-
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 import { PostCard } from '@/components/PostCard';
 

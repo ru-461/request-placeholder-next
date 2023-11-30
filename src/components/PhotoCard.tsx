@@ -2,7 +2,6 @@ import { Card } from '@/components/common';
 
 import { Photo } from '@/types';
 
-
 export function PhotoCard({ photo }: { photo: Photo }) {
   return (
     <Card

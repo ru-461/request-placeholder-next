@@ -1,4 +1,3 @@
-
 import { AlbumCard } from '@/components/AlbumCard';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 
