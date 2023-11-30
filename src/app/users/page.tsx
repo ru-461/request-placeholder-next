@@ -1,7 +1,10 @@
+
+
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 import { UserCard } from '@/components/UserCard';
 
 import { User } from '@/types';
+
 
 async function fetchUsers(): Promise<User[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/Users');

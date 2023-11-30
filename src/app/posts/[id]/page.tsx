@@ -4,6 +4,9 @@ import { Box, Heading, Link, Text, Stack } from '@/components/common';
 
 import { Comment, Post, User } from '@/types';
 
+
+
+
 async function fetchPost(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
 

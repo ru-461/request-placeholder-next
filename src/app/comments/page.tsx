@@ -1,7 +1,10 @@
+
+
 import { CommentCard } from '@/components/CommentCard';
 import { Box, Divider, Heading, Stack } from '@/components/common';
 
 import { Comment } from '@/types';
+
 
 async function fetchComments(): Promise<Comment[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/comments');

@@ -4,6 +4,9 @@ import { Card, LinkOverlay } from '@/components/common';
 
 import { Post } from '@/types';
 
+
+
+
 export function PostCard({ post }: { post: Post }) {
   return (
     <Card

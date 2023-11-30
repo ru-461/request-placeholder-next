@@ -1,3 +1,5 @@
+
+
 import { AlbumCard } from '@/components/AlbumCard';
 import {
   Box,
@@ -15,6 +17,7 @@ import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
 
 import { Post, User, Album, Todo } from '@/types';
+
 
 async function fetchUser(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
