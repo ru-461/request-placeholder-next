@@ -9,25 +9,45 @@
   "plugins": ["import", "unused-imports"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
-    "react/jsx-sort-props": "warn",
-    "unused-imports/no-unused-imports": "warn",
     "import/order": [
       "warn",
       {
-        "newlines-between": "always",
         "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
+          "caseInsensitive": true,
+          "order": "asc"
         },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
         "pathGroups": [
           {
-            "group": "internal",
+            "group": "builtin",
+            "pattern": "next/**",
+            "position": "before"
+          },
+          {
+            "group": "parent",
             "pattern": "@/components/**",
+            "position": "before"
+          },
+          {
+            "group": "type",
+            "pattern": "@/types",
             "position": "before"
           }
         ],
         "pathGroupsExcludedImportTypes": ["builtin"]
       }
-    ]
+    ],
+    "react/jsx-sort-props": "warn",
+    "unused-imports/no-unused-imports": "warn"
   }
 }
