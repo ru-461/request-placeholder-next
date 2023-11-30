@@ -6,11 +6,7 @@ import {
   SimpleGrid,
   Stack,
   Text,
-} from '@/components/common';
-import { List, ListItem } from '@/components/common';
-import { Link } from '@/components/common';
-import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/common';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@/components/common';
+ List, ListItem , Link , LinkIcon, EmailIcon, PhoneIcon , Tabs, TabList, TabPanels, Tab, TabPanel } from '@/components/common';
 import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
 

@@ -1,7 +1,6 @@
 'use client';
 
-import { Checkbox } from '@/components/common';
-import { Card } from '@/components/common';
+import { Checkbox , Card } from '@/components/common';
 
 import { Todo } from '@/types';
 
