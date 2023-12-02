@@ -1,8 +1,8 @@
+import { ChakraProvider } from '@chakra-ui/react';
+
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Main } from '@/components/Main';
-
-import { Providers } from './providers';
 
 import type { Metadata } from 'next';
 
@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <Providers>
+        <ChakraProvider>
           <Header />
           <Main>{children}</Main>
           <Footer />
-        </Providers>
+        </ChakraProvider>
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Card, LinkOverlay } from '@/components/common';
+import { Card, LinkOverlay } from '@chakra-ui/react';
 
 import { Post } from '@/types';
 

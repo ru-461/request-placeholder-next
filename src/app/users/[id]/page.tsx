@@ -1,4 +1,3 @@
-import { AlbumCard } from '@/components/AlbumCard';
 import {
   Box,
   HStack,
@@ -6,7 +5,13 @@ import {
   SimpleGrid,
   Stack,
   Text,
- List, ListItem , Link , LinkIcon, EmailIcon, PhoneIcon , Tabs, TabList, TabPanels, Tab, TabPanel } from '@/components/common';
+} from '@chakra-ui/react';
+import { List, ListItem } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
+
+import { AlbumCard } from '@/components/AlbumCard';
+import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/icons';
 import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
 
