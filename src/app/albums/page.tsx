@@ -1,5 +1,6 @@
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@chakra-ui/react';
+
 import { AlbumCard } from '@/components/AlbumCard';
-import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
 
 import { Album } from '@/types';
 

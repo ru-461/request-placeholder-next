@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 
-import { Card, HStack, Link, Spacer, Text } from '@/components/common';
+import { Card, HStack, Link, Spacer, Text } from '@chakra-ui/react';
 
 import { Comment } from '@/types';
 

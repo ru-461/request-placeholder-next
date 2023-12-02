@@ -1,5 +1,6 @@
+import { Box, Divider, Heading, Stack } from '@chakra-ui/react';
+
 import { CommentCard } from '@/components/CommentCard';
-import { Box, Divider, Heading, Stack } from '@/components/common';
 
 import { Comment } from '@/types';
 

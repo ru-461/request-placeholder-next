@@ -1,4 +1,4 @@
-import { Card } from '@/components/common';
+import { Card } from '@chakra-ui/react';
 
 import { Photo } from '@/types';
 

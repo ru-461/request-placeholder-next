@@ -1,7 +1,5 @@
-'use client';
-
-import { Checkbox } from '@/components/common';
-import { Card } from '@/components/common';
+import { Checkbox } from '@chakra-ui/react';
+import { Card } from '@chakra-ui/react';
 
 import { Todo } from '@/types';
 

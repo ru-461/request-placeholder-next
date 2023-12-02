@@ -1,6 +1,6 @@
 import NextLink from 'next/link';
 
-import { Box, HStack, Link } from '@/components/common';
+import { Box, HStack, Link } from '@chakra-ui/react';
 
 const ITEMS = [
   {

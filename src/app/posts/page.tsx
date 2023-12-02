@@ -1,4 +1,5 @@
-import { Box, Divider, Heading, SimpleGrid, Stack } from '@/components/common';
+import { Box, Divider, Heading, SimpleGrid, Stack } from '@chakra-ui/react';
+
 import { PostCard } from '@/components/PostCard';
 
 import { Post } from '@/types';

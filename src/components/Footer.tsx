@@ -1,4 +1,4 @@
-import { Text, Box, Link, Center } from '@/components/common';
+import { Text, Box, Link, Center } from '@chakra-ui/react';
 
 const fullYear = new Date().getFullYear();
 

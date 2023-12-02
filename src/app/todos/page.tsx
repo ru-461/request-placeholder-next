@@ -1,4 +1,5 @@
-import { Box, Divider, Heading, Stack } from '@/components/common';
+import { Box, Divider, Heading, Stack } from '@chakra-ui/react';
+
 import { TodoCard } from '@/components/TodoCard';
 
 import { Todo } from '@/types';
