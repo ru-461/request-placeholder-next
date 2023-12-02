@@ -1,5 +1,4 @@
-import { Checkbox } from '@chakra-ui/react';
-import { Card } from '@chakra-ui/react';
+import { Checkbox, Card } from '@chakra-ui/react';
 
 import { Todo } from '@/types';
 
