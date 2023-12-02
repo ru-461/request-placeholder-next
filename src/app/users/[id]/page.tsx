@@ -1,6 +1,3 @@
-'use client';
-
-import { LinkIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons';
 import {
   Box,
   HStack,
@@ -14,6 +11,7 @@ import { Link } from '@chakra-ui/react';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 
 import { AlbumCard } from '@/components/AlbumCard';
+import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/icons';
 import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
 
