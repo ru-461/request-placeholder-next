@@ -9,6 +9,7 @@
   "plugins": ["import", "unused-imports"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
+    "import/no-duplicates": "warn",
     "import/order": [
       "warn",
       {
