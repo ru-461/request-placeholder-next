@@ -1,3 +1,5 @@
+'use client';
+
 import { LinkIcon, EmailIcon, PhoneIcon } from '@chakra-ui/icons';
 import {
   Box,
