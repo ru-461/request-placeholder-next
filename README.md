@@ -8,11 +8,11 @@ Validation of requests to [JSONPlaceholder - Free Fake REST API](https://jsonpla
 Install dependencies.
 
 ```shell
-pnpm install
+bun install
 ```
 
 Start development server on [localhost:3000](http://localhost:3000).
 
 ```shell
-pnpm dev
+bun dev
 ```
