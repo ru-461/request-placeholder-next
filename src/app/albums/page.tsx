@@ -3,7 +3,7 @@ import { Album } from '@/types';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@chakra-ui/react';
 
 async function fetchAlbums() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/alb¥ms');
+  const res = await fetch('https://jsonplaceholder.typicode.com/albms');
 
   if (!res.ok) {
     throw new Error('Fetch failed.');
