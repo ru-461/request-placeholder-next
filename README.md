@@ -14,5 +14,5 @@ bun install
 Start development server on [localhost:3000](http://localhost:3000).
 
 ```shell
-bun dev
+bun run dev
 ```
