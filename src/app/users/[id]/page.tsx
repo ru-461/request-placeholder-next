@@ -2,25 +2,25 @@ import {
   Box,
   HStack,
   Heading,
-  SimpleGrid,
-  Stack,
-  Text,
+  Link,
   List,
   ListItem,
-  Link,
-  Tabs,
-  TabList,
-  TabPanels,
+  SimpleGrid,
+  Stack,
   Tab,
+  TabList,
   TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
 } from '@chakra-ui/react';
 
 import { AlbumCard } from '@/components/AlbumCard';
-import { LinkIcon, EmailIcon, PhoneIcon } from '@/components/icons';
 import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
+import { EmailIcon, LinkIcon, PhoneIcon } from '@/components/icons';
 
-import { Post, User, Album, Todo } from '@/types';
+import { Album, Post, Todo, User } from '@/types';
 
 async function fetchUser(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
