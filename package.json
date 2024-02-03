@@ -21,11 +21,11 @@
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "eslint": "8.46.0",
-    "eslint-config-next": "14.0.3",
+    "eslint-config-next": "latest",
     "framer-motion": "^10.16.12",
-    "next": "14.0.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "typescript": "5.1.6"
   },
   "devDependencies": {
