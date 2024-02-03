@@ -35,9 +35,5 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": ["biome check --apply --no-errors-on-unmatched"]
-  },
-  "volta": {
-    "node": "20.9.0",
-    "pnpm": "8.11.0"
   }
 }
