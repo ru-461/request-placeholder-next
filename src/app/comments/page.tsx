@@ -1,8 +1,6 @@
-import { Box, Divider, Heading, Stack } from '@chakra-ui/react';
-
 import { CommentCard } from '@/components/CommentCard';
-
 import { Comment } from '@/types';
+import { Box, Divider, Heading, Stack } from '@chakra-ui/react';
 
 async function fetchComments(): Promise<Comment[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/comments');

@@ -1,6 +1,5 @@
-import { Card, Checkbox } from '@chakra-ui/react';
-
 import { Todo } from '@/types';
+import { Card, Checkbox } from '@chakra-ui/react';
 
 export function TodoCard({ todo }: { todo: Todo }) {
   return (

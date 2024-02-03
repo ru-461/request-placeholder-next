@@ -1,6 +1,5 @@
-import { Card } from '@chakra-ui/react';
-
 import { Photo } from '@/types';
+import { Card } from '@chakra-ui/react';
 
 export function PhotoCard({ photo }: { photo: Photo }) {
   return (
