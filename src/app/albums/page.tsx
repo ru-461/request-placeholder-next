@@ -1,11 +1,9 @@
+import { AlbumCard } from '@/components/AlbumCard';
+import { Album } from '@/types';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@chakra-ui/react';
 
-import { AlbumCard } from '@/components/AlbumCard';
-
-import { Album } from '@/types';
-
 async function fetchAlbums() {
-  const res = await fetch('https://jsonplaceholder.typicode.com/albums');
+  const res = await fetch('https://jsonplaceholder.typicode.com/alb¥ms');
 
   if (!res.ok) {
     throw new Error('Fetch failed.');

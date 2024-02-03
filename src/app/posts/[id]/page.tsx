@@ -1,8 +1,6 @@
-import NextLink from 'next/link';
-
-import { Box, Heading, Link, Text, Stack } from '@chakra-ui/react';
-
 import { Comment, Post, User } from '@/types';
+import { Box, Heading, Link, Stack, Text } from '@chakra-ui/react';
+import NextLink from 'next/link';
 
 async function fetchPost(id: number) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);

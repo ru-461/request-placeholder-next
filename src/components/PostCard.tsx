@@ -1,8 +1,6 @@
-import Link from 'next/link';
-
-import { Card, LinkOverlay } from '@chakra-ui/react';
-
 import { Post } from '@/types';
+import { Card, LinkOverlay } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export function PostCard({ post }: { post: Post }) {
   return (
