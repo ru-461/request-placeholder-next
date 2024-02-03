@@ -1,8 +1,9 @@
-'use client';
+"use client";
 
-import { Box, Button, Heading, VStack } from '@chakra-ui/react';
-import { useEffect } from 'react';
+import { Box, Button, Heading, VStack } from "@chakra-ui/react";
+import { useEffect } from "react";
 
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 export default function Error({
   error,
   reset,
