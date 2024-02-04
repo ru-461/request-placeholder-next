@@ -1,6 +1,8 @@
-import { PostCard } from '@/components/PostCard';
-import { Post } from '@/types';
 import { Box, Divider, Heading, SimpleGrid, Stack } from '@chakra-ui/react';
+
+import { PostCard } from '@/components/PostCard';
+
+import { Post } from '@/types';
 
 async function fetchPosts(): Promise<Post[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');

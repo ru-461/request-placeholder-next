@@ -1,5 +1,6 @@
-import { Album } from '@/types';
 import { Card } from '@chakra-ui/react';
+
+import { Album } from '@/types';
 
 export function AlbumCard({ album }: { album: Album }) {
   return (

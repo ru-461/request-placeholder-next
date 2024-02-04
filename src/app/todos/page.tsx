@@ -1,6 +1,8 @@
-import { TodoCard } from '@/components/TodoCard';
-import { Todo } from '@/types';
 import { Box, Divider, Heading, Stack } from '@chakra-ui/react';
+
+import { TodoCard } from '@/components/TodoCard';
+
+import { Todo } from '@/types';
 
 async function fetchTodos(): Promise<Todo[]> {
   const res = await fetch('https://jsonplaceholder.typicode.com/todos');

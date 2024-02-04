@@ -1,0 +1,44 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "import/order": [
+      "warn",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "group": "builtin",
+            "pattern": "next/**",
+            "position": "before"
+          },
+          {
+            "group": "parent",
+            "pattern": "@/components/**",
+            "position": "before"
+          },
+          {
+            "group": "type",
+            "pattern": "@/types",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ],
+    "react/jsx-sort-props": "warn"
+  }
+}
