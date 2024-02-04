@@ -18,7 +18,7 @@ export default function Error({
   return (
     <Box alignItems="center" display="flex" h="100vh" justifyContent="center">
       <VStack spacing="4">
-        <Heading fontSize="6xl">Error</Heading>
+        <Heading>Error</Heading>
         <Button onClick={() => reset()}>Retry</Button>
       </VStack>
     </Box>
