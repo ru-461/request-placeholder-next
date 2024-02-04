@@ -16,9 +16,9 @@ import {
 } from '@chakra-ui/react';
 
 import { AlbumCard } from '@/components/AlbumCard';
+import { EmailIcon, LinkIcon, PhoneIcon } from '@/components/icons';
 import { PostCard } from '@/components/PostCard';
 import { TodoCard } from '@/components/TodoCard';
-import { EmailIcon, LinkIcon, PhoneIcon } from '@/components/icons';
 
 import { Album, Post, Todo, User } from '@/types';
 

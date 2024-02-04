@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "biome check --apply ./src",
+    "check": "biome check --apply ./src && eslint './src/**/*.{js,jsx,ts,tsx}' --fix",
+    "sort": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "sort:fix": "eslint './src/**/*.{js,jsx,ts,tsx}' --fix",
     "format": "biome format ./src",
     "format:fix": "biome format --write ./src",
     "lint": "biome lint ./src",
@@ -34,6 +36,9 @@
     "lint-staged": "^15.2.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": ["biome check --apply --no-errors-on-unmatched"]
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "biome check --apply --no-errors-on-unmatched",
+      "eslint --fix"
+    ]
   }
 }

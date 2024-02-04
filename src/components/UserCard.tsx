@@ -1,6 +1,8 @@
-import { User } from '@/types';
-import { Card, LinkOverlay } from '@chakra-ui/react';
 import Link from 'next/link';
+
+import { Card, LinkOverlay } from '@chakra-ui/react';
+
+import { User } from '@/types';
 
 export function UserCard({ user }: { user: User }) {
   return (
