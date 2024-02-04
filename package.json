@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "biome check --apply ./src",
+    "check": "biome check --apply ./src && eslint './src/**/*.{js,jsx,ts,tsx}' --fix",
     "sort": "eslint './src/**/*.{js,jsx,ts,tsx}'",
     "sort:fix": "eslint './src/**/*.{js,jsx,ts,tsx}' --fix",
     "format": "biome format ./src",
